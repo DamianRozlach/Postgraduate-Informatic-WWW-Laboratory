@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #414141;
+    background-image: url("kosmos.jpg");
+    padding: 30px;
+    text-align: left;
+}
+
+section {
+    display: flex;
+
+}
+
+
+nav {
+    background-color: #000000;
+    padding: 10px;
+    /*float: left;*/
+    /*width: 30%;*/
+    /*height: 600px;*/
+    flex: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #b3bdb4;
+    border: 1px solid #363d38;
+    text-align: center;
+}
+
+nav li:hover {
+    background-color: #009B00;
+    border: 1px solid #414141;
+}
+
+.main {
+    display: none;
+}
+
+
+
+article {
+    background-color: #999999;
+    background-image: url("cool-background.png");
+    padding: 50px;
+    /*float: left;*/
+    /*width: 70%;*/
+    flex: 3;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: #ab3d3d;
+    background-image: url("kosmos.jpg");
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
+}

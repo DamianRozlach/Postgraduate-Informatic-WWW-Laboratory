@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html LANG="pl">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+  <meta name="Description" content="Strona poświęcoana zajęciom www" />
+  <meta name="Keywords" content="WWW;test" />
+  <meta name="Author" content="MJ" />
+  <title>Rozlach Damian</title>
+
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body onload="menu('O mnie')">
+
+<header>
+<h1 style="color: white" ><b>Witaj na mojej stronie internetowej</b></h1>
+</header>
+
+<section>
+<nav>
+<ul>
+<li  onclick="menu('O mnie')"> O mnie </li>
+<li onclick="menu('Hobby')"> Hobby </li>
+<li onclick="menu('Praca')"> Praca </li>
+  <li onclick="menu('kontakt')"> Kontakt </li>
+</ul>
+</nav>
+<article>
+<div id="O mnie" class="main">
+  <h2 style="color: rgb(201, 194, 194)" >Cześć</h2>
+  <p style="color: rgb(201, 194, 194)">Nazywam się Damian i jestem studentem Akademii Górniczo Hutniczej </p>
+  <img src="agh.jfif" height="200">
+  <p style="color: rgb(201, 194, 194)">Interesują mnie mikrokontrolery i mikrokomputery, piszę pracę Magisterską o wykorzystaniu systemów operacyjnych czasu rzeczywistego </p>
+  <p style="color: rgb(201, 194, 194)">Studiuje Elektrotechnike oraz Informatyke</p>
+</div>
+<div id="Hobby" class="main">
+    <h2 style="color: rgb(201, 194, 194)">Moje zainteresowania</h2>
+    <p style="color: rgb(201, 194, 194)">W wolnych chwilach lubię ćwiczyć na siłowni</p>
+    <img src="siłownia.jfif" height="200">
+    <p style="color: rgb(201, 194, 194)">Oraz interesuje się pokerem</p>
+    <img src="poker.jfif" height="200">
+</div>
+<div id="Praca" class="main">
+    <h2 style="color: rgb(201, 194, 194)">Praca</h2>
+    <p style="color: rgb(201, 194, 194)">Jestem zatrudniony jako młodszy inżynier do spraw testów oprogramowania w firmie Aptiv</p>
+    <img src="aptiv.png">
+    <p style="color: rgb(201, 194, 194)">Zajmuje się testowaniem oprogramowania oraz części do samochodów</p>
+    <img src="soft.jfif" height="200">
+</div>
+  <div id="kontakt" class="main">
+    <h2 style="color: rgb(201, 194, 194)">Kontakt:</h2>
+    <p style="color: rgb(201, 194, 194)">Mój github:</p>
+    <a href="https://github.com/DamianRozlach">Link do github!</a>
+    <p style="color: rgb(201, 194, 194)">Mój mail:</p>
+    <p style="color: rgb(255, 22, 22)">drozlach@student.agh.edu.pl</p>
+    <img src="soft.jfif" height="200">
+
+
+</div>
+
+</article>
+</section>
+
+<footer>
+    <h2 style="color: rgb(201, 194, 194)" >Strona internetowa przygotowana na zajęciach WWW</h2>
+    <h2 style="color: rgb(201, 194, 194)" >Autor: Damian Rozlach</h2>
+</footer>
+
+<script>
+  function menu(city){
+    var main = document.getElementsByClassName("main")
+
+    for (let m of main){
+      m.style.display = "none"
+    }
+    var cit = document.getElementById(city)
+    cit.style.display = "block"
+
+  }
+</script>
+	
+</body>
+</html>
